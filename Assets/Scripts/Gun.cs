@@ -23,7 +23,7 @@ public class Gun : MonoBehaviour
     void Shoot(){
         RaycastHit hit;
         if(Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, range)){
-            Debug.Log(hit.transform.name);
+            //Debug.Log(hit.transform.name);
             
             Target target = hit.transform.GetComponent<Target>();
 
