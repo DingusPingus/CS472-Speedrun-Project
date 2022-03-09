@@ -10,7 +10,8 @@ public class EndPlatform : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        fieldMatieral = field.GetComponent<MeshRenderer>().sharedMaterial;
+        
+        fieldMatieral = field.GetComponentInChildren<MeshRenderer>().sharedMaterial;;
         fieldMatieral.SetColor("_Color", Color.red);
     }
 

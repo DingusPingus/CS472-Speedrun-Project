@@ -16,6 +16,9 @@ public class Player : MonoBehaviour
    
     public LayerMask groundMask;
 
+    [SerializeField]
+    private ParticleSystem landEffect;
+
     Vector3 velocity;   
     bool isGrounded; 
 
@@ -40,8 +43,9 @@ public class Player : MonoBehaviour
 
         //if you dont want to autojump
         //add to the if statement a check for Input.GetButtonDown("Jump")
-        if( isGrounded){
+        if(isGrounded){
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
+            landEffect.Play();
         }
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
@@ -57,6 +61,13 @@ public class Player : MonoBehaviour
     }
     public void respawn(){
         transform.position = GameManager.respawnPoint;
+    }
+
+    void OnTriggerEnter(Collider other){
+        if(other.gameObject.tag == "Finish"){
+            Debug.Log("its working2");
+            GameManager.ReturnToMenu();
+        }
     }
 
     
