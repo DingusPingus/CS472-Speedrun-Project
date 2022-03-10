@@ -64,8 +64,7 @@ public class Player : MonoBehaviour
     }
 
     void OnTriggerEnter(Collider other){
-        if(other.gameObject.tag == "Finish"){
-            Debug.Log("its working2");
+        if(other.gameObject.tag == "Finish" && GameManager.isLevelEnd()){
             GameManager.ReturnToMenu();
         }
     }
