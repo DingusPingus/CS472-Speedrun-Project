@@ -69,6 +69,6 @@ public class GameManager : MonoBehaviour
         Debug.Log(PlayerPrefs.GetFloat(sceneName));
         PlayerPrefs.Save();
         //we also want to save the fastest time
-        SceneManager.LoadScene("Title Page");
+        SceneManager.LoadScene("Level Selection");
     }
 }
