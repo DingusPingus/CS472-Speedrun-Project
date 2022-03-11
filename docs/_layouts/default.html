@@ -31,6 +31,9 @@
 
     <div class="container">
       <section id="main_content">
+        {% if page.unity_dir %}
+          {% include page__unity.html %}
+        {% endif %}
         {{ content }}
       </section>
     </div>
