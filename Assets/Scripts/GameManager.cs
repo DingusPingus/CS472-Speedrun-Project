@@ -62,7 +62,7 @@ public class GameManager : MonoBehaviour
         TimerText.text = currentTime.ToString("F2");
     }
     public static void ReturnToMenu(){
-        //before we return to main menu we want to unlock cursor
+        //before we return to level selection we want to unlock cursor
         Cursor.lockState = CursorLockMode.None;
 
         PlayerPrefs.SetFloat(sceneName,(float)currentTime);

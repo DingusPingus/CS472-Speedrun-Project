@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
+//Contains Options for any Menu Elements that have been created so far, incorporated previous "MainMenu" file
 public class MenuOperations : MonoBehaviour
 {
    public void OptionsMenu()
