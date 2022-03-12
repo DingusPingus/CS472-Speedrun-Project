@@ -30,6 +30,7 @@ public class GameManager : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
 
         sceneName = SceneManager.GetActiveScene().name;
+        setLevelOver(false);
     }
 
     // Update is called once per frame
@@ -42,6 +43,10 @@ public class GameManager : MonoBehaviour
         if (targetCount == 0 && !isLevelEnd()){
             setLevelOver(true);
         }
+        if(Input.GetKeyDown("escape")){
+            ReturnToMenu();
+        }
+
         UpdateUI();
     }
 
@@ -65,10 +70,14 @@ public class GameManager : MonoBehaviour
         //before we return to level selection we want to unlock cursor
         Cursor.lockState = CursorLockMode.None;
 
-        PlayerPrefs.SetFloat(sceneName,(float)currentTime);
-        Debug.Log(PlayerPrefs.GetFloat(sceneName));
-        PlayerPrefs.Save();
         //we also want to save the fastest time
+        //if the user made a faster time
+
+        if(isLevelEnd() && currentTime < PlayerPrefs.GetFloat(sceneName, 999999)){
+            PlayerPrefs.SetFloat(sceneName,(float)currentTime);
+        }
+    
+        PlayerPrefs.Save();
         SceneManager.LoadScene("Level Selection");
     }
 }

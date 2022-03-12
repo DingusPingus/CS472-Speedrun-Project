@@ -22,4 +22,10 @@ public class EndPlatform : MonoBehaviour
             fieldMatieral.SetColor("_Color", Color.white);
         }
     }
+
+    //this is so ending platforms in different scenes do not affect each other
+    void OnDestroy(){
+        fieldMatieral = field.GetComponentInChildren<MeshRenderer>().sharedMaterial;;
+        fieldMatieral.SetColor("_Color", Color.red);
+    }
 }

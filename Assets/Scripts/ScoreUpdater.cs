@@ -24,13 +24,13 @@ public class ScoreUpdater : MonoBehaviour
         //Checks for if new player score is lower than before.
         if (score1 > PlayerPrefs.GetFloat("level1")){
             score1 = PlayerPrefs.GetFloat("level1");
-            highscoreLevel1.text = score1.ToString() + "s";
+            highscoreLevel1.text = score1.ToString("F2") + "s";
         }
 
         if (score2 > PlayerPrefs.GetFloat("level2"))
         {
             score2 = PlayerPrefs.GetFloat("level2");
-            highscoreLevel2.text = score2.ToString() + "s";
+            highscoreLevel2.text = score2.ToString("F2") + "s";
         }
 
         //Bandaid fix for No Attemt = 0s (since float defaulting to 0s)
