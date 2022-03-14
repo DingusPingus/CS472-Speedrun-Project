@@ -6,14 +6,14 @@ using UnityEngine;
 //this script is largely based upon this tutorial: https://www.youtube.com/watch?v=_QajrabyTJc
 public class PlayerLook : MonoBehaviour
 {
-    public float mouseSensitivity = 100f;
+    public float mouseSensitivity = 5f;
     public Transform playerBody;
 
     float rotationX = 0f;
     // Start is called before the first frame update
     void Start()
     {
-
+        mouseSensitivity = PlayerPrefs.GetFloat("sensitivity",5);
     }
 
     // Update is called once per frame

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0004871139, g: 0.004806026, b: 0.020137792, a: 1}
+  m_IndirectSpecularColor: {r: 0.0006722759, g: 0.004873903, b: 0.020348426, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1729,9 +1729,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28c6f8ab286995642af2011ccd247df4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  targets: {fileID: 395844816}
   targetsLeftText: {fileID: 1424772902}
   TimerText: {fileID: 146520312}
-  targets: {fileID: 395844816}
   player: {fileID: 1490969649}
 --- !u!4 &1320409861
 Transform:
@@ -3213,6 +3213,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 5307870391246493539, guid: 70ca4863515ca7247a95a213115e4d32,
         type: 3}
+    - target: {fileID: 5803717665305130960, guid: def7ed604ac5d504d808f2da263f91d2,
+        type: 3}
+      propertyPath: mouseSensitivity
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5803717666022060144, guid: def7ed604ac5d504d808f2da263f91d2,
         type: 3}
       propertyPath: m_RootOrder
