@@ -11,10 +11,10 @@ public class ScoreUpdater : MonoBehaviour
     public TMPro.TMP_Text highscoreLevel2;
 
     //Sets new values to be just over 277 hours, easy value to compare against to ensure whatever attempt is done first will be lower
-    //float score1 = 999999;
-    //float score2 = 999999;
-    float score1;
-    float score2;
+    float score1 = 999999;
+    float score2 = 999999;
+    //float score1;
+    //float score2;
 
 
     // Start is called before the first frame update

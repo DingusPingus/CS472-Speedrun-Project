@@ -405,7 +405,7 @@ GameObject:
   - component: {fileID: 759148572}
   - component: {fileID: 759148571}
   m_Layer: 5
-  m_Name: Back to Main Button
+  m_Name: Reset Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -429,8 +429,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.24268128, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.99145514}
-  m_AnchoredPosition: {x: -450, y: -294}
-  m_SizeDelta: {x: 166.2298, y: 57.8033}
+  m_AnchoredPosition: {x: 35.851074, y: -96.85956}
+  m_SizeDelta: {x: 261.9321, y: 96.0842}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &759148571
 MonoBehaviour:
@@ -825,7 +825,7 @@ GameObject:
   - component: {fileID: 1214972110}
   - component: {fileID: 1214972109}
   m_Layer: 5
-  m_Name: Text Back Button
+  m_Name: Text Reset Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -871,9 +871,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Back
-
-'
+  m_text: Reset Sensitivity
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
