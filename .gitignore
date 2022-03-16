@@ -1,13 +1,14 @@
 [Ll]ibrary/
 [Tt]emp/
 [Oo]bj/
+[Ll]ogs/
 #build holds the WebGL project so comment this out
 #[Bb]uild/
 #[Bb]uilds/
 Assets/AssetStoreTools*
 
 #logs folder
-[Ll}ogs/
+
 # Visual Studio cache directory
 .vs/
 
