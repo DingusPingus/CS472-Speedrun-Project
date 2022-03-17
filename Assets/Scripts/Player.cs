@@ -65,6 +65,7 @@ public class Player : MonoBehaviour
 
     void OnTriggerEnter(Collider other){
         if(other.gameObject.tag == "Finish" && GameManager.isLevelEnd()){
+            GameManager.UpdateScore();
             GameManager.ReturnToMenu();
         }
     }

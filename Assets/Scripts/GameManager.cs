@@ -20,10 +20,11 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private static string sceneName;
     private static int targetCount = 0;
-    // Start is called before the first frame update
+   
      private static bool levelOver = false;
 
      public static Vector3 respawnPoint = Vector3.up;
+      // Start is called before the first frame update
     void Start()
     {
         //when gamemanager is brought into the scene (AKA a level is active) we dont want the cursor to move
@@ -70,14 +71,16 @@ public class GameManager : MonoBehaviour
         //before we return to level selection we want to unlock cursor
         Cursor.lockState = CursorLockMode.None;
 
-        //we also want to save the fastest time
-        //if the user made a faster time
+        PlayerPrefs.Save();
+        SceneManager.LoadScene("Level Selection");
+    }
 
-        if(isLevelEnd() && currentTime < PlayerPrefs.GetFloat(sceneName, 999999)){
+    //this function will only update the highscore if the current time is found to be less then the current
+    //highscore time
+    public static void UpdateScore(){
+         if(isLevelEnd() && currentTime < PlayerPrefs.GetFloat(sceneName, 999999)){
             PlayerPrefs.SetFloat(sceneName,(float)currentTime);
         }
     
-        PlayerPrefs.Save();
-        SceneManager.LoadScene("Level Selection");
     }
 }
