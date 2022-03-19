@@ -209,6 +209,7 @@ GameObject:
   m_Component:
   - component: {fileID: 196321321}
   - component: {fileID: 196321322}
+  - component: {fileID: 196321323}
   m_Layer: 0
   m_Name: Options Menu
   m_TagString: Untagged
@@ -245,6 +246,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 675f37995daa79b47a1b83a392aa111a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &196321323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 196321320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8cfb33d0ff4f174b82392942ce32bfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sensitivitySlider: {fileID: 845712754}
@@ -521,8 +534,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 196321322}
-        m_TargetAssemblyTypeName: MenuOperations, Assembly-CSharp
+      - m_Target: {fileID: 196321323}
+        m_TargetAssemblyTypeName: OptionsFunctions, Assembly-CSharp
         m_MethodName: ResetSensitivity
         m_Mode: 1
         m_Arguments:

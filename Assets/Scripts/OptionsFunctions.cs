@@ -1,19 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-//Contains Options for any Menu Elements that have been created so far, incorporated previous "MainMenu" file
-public class MenuOperations : MonoBehaviour
+public class OptionsFunctions : MonoBehaviour
 {
-    /*
-    Moved to Own OptionsFunctions.cs file
-    public Slider sensitivitySlider;
-
-   
     //Declares value for Custom Sensitivity, to prevent everything from being stuck.
     public static float CustomSens = 5f;
+
+    public Slider sensitivitySlider;
 
     public void Start()
     {
@@ -34,32 +29,5 @@ public class MenuOperations : MonoBehaviour
     {
         CustomSens = 5f;
         sensitivitySlider.value = CustomSens;
-    }
-    */
-
-    public void OptionsMenu()
-    {
-        SceneManager.LoadScene("Options");
-    }
-
-
-    public void ReturnToTitle()
-    {
-        SceneManager.LoadScene("Title Page");
-    }
-
-    public void LevelSelector()
-    {
-        SceneManager.LoadScene("Level Selection");
-    }
-
-    public void PlayLevel1()
-    {
-        SceneManager.LoadScene("level1");
-    }
-
-    public void PlayLevel2()
-    {
-        SceneManager.LoadScene("level2");
     }
 }
