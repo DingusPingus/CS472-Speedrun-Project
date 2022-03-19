@@ -44,7 +44,7 @@ public class GameManager : MonoBehaviour
         if (targetCount == 0 && !isLevelEnd()){
             setLevelOver(true);
         }
-        if(Input.GetKeyDown("escape")){
+        if(Input.GetKeyDown("backspace")){
             ReturnToMenu();
         }
 
