@@ -8,6 +8,7 @@ public class OptionsFunctions : MonoBehaviour
     //Declares value for Custom Sensitivity, to prevent everything from being stuck.
     public static float CustomSens = 5f;
 
+    //Declaring slider variable to associate in game
     public Slider sensitivitySlider;
 
     public void Start()
@@ -19,12 +20,13 @@ public class OptionsFunctions : MonoBehaviour
         sensitivitySlider.onValueChanged.AddListener(delegate { ChangeSensitivity(); });
     }
 
+    //Changes sensitivity to reflect current slider value, refreshing on movement per listener above
     public void ChangeSensitivity()
     {
-        //Changes sensitivity to reflect current slider value
         CustomSens = sensitivitySlider.value;
     }
 
+    //Resets the sensitivity value to 5 (Default during design), and moves the slider accordingly
     public void ResetSensitivity()
     {
         CustomSens = 5f;
