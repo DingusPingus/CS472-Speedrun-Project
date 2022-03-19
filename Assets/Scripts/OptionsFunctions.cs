@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+//Currently used for changin the sensitivity of the player camera. In future can be expanded to contain other things.
 public class OptionsFunctions : MonoBehaviour
 {
     //Declares value for Custom Sensitivity, to prevent everything from being stuck.

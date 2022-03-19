@@ -19,7 +19,6 @@ public class PlayerLook : MonoBehaviour
         mouseSensitivity = PlayerPrefs.GetFloat("sensitivity",OptionsFunctions.CustomSens);
     }
 
- 
 
     // Update is called once per frame
     void Update()
