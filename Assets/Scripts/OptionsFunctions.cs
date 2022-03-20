@@ -33,6 +33,6 @@ public class OptionsFunctions : MonoBehaviour
     public void ResetSensitivity()
     {
         PlayerPrefs.SetFloat("sensitivity", DefaultCustomSens);
-        //sensitivitySlider.value = DefaultCustomSens;
+        sensitivitySlider.value = DefaultCustomSens;
     }
 }
