@@ -1,6 +1,8 @@
 # CS476-Speedrun-Project
 
 This project was developed by Isaac Atta and Kurtis Tomyn over the course of a semester as the final project for the course CS 476 at the University of Regina.
+Scripts can be viewed by navigating through to the path `./Assets/scripts` or by clicking [here](https://github.com/DingusPingus/CS476-Speedrun-Project/tree/main/Assets/Scripts)
+
  
 #  Installation Guide
 * If you dont already have a Unity account you can create one [here](https://unity.com/)
