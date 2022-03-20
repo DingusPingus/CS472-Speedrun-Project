@@ -1,4 +1,4 @@
-# CS472-Speedrun-Project
+# CS476-Speedrun-Project
 
 This project was developed by Isaac Atta and Kurtis Tomyn over the course of a semester as the final project for the course CS 476 at the University of Regina.
  
