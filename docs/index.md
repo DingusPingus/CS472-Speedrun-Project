@@ -6,7 +6,8 @@ unity_dir: game
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The goal of Quickness Kinesis is to hit all targets in level and then reach the glowing platform at the end **<ins>as fast as possible</ins>**. To add a bit more challenge there is one more caveat... You will automatically jump when you touch the ground! So make sure you time your jumps or you might lose a lot of time. This game is entirely singleplayer so your only opponent is yourself and your highscore, but you could always compare your score with your friends to see who is the fastest speedrunner of Quickness Kinesis!
 
 # Controls
-* WASD to move (no space to jump!)
+* WASD to move your character forward, back, and to the side.
+* Space will **NOT** make your character jump, instead you will automatically jump when you hit the ground
 * Use your mouse to look around
 * Left click to shoot
 * Backspace to return from a level you are currently in
