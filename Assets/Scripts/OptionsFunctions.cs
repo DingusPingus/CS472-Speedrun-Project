@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 //Currently used for changin the sensitivity of the player camera. In future can be expanded to contain other things.
 public class OptionsFunctions : MonoBehaviour
@@ -34,5 +35,6 @@ public class OptionsFunctions : MonoBehaviour
     {
         PlayerPrefs.SetFloat("sensitivity", DefaultCustomSens);
         sensitivitySlider.value = DefaultCustomSens;
+        EventSystem.current.SetSelectedGameObject(null);
     }
 }
