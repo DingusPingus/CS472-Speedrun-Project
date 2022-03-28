@@ -405,7 +405,7 @@ GameObject:
   - component: {fileID: 759148572}
   - component: {fileID: 759148571}
   m_Layer: 5
-  m_Name: Reset Button
+  m_Name: Reset Score Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -961,7 +961,7 @@ GameObject:
   - component: {fileID: 1214972110}
   - component: {fileID: 1214972109}
   m_Layer: 5
-  m_Name: Text Reset Button
+  m_Name: Text Reset Score
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1007,7 +1007,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Reset Sensitivity
+  m_text: Reset Score
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}

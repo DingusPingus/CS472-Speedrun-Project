@@ -37,4 +37,13 @@ public class OptionsFunctions : MonoBehaviour
         sensitivitySlider.value = DefaultCustomSens;
         EventSystem.current.SetSelectedGameObject(null);
     }
+
+    /*
+    public void ResetHighscores()
+    {
+        PlayerPrefs.SetFloat("level1", 999999);
+        PlayerPrefs.SetFloat("level2", 999999);
+        EventSystem.current.SetSelectedGameObject(null);
+    }
+ */   
 }
