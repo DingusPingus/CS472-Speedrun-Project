@@ -38,12 +38,12 @@ public class OptionsFunctions : MonoBehaviour
         EventSystem.current.SetSelectedGameObject(null);
     }
 
-    /*
+    
     public void ResetHighscores()
     {
         PlayerPrefs.SetFloat("level1", 999999);
         PlayerPrefs.SetFloat("level2", 999999);
         EventSystem.current.SetSelectedGameObject(null);
     }
- */   
+  
 }
